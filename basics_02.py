@@ -1,2 +1,29 @@
-
+import numpy as np
 #             Accessing/Changing specific elements, rows, columns, etc
+a = np.array([[1,2,3,4,5,6,7],[8,9,10,11,12,13,14]])
+print(a)
+print(a.shape)
+
+
+#get specific element[r, c]
+print(a[1, 5])      #the 2 x 3 matrix has row index as 0, 1 i.e 1st row is 0 and 2nd row is 1
+print(a[1,-2])  # gives same value as a[2,5] i.e 2nd row 2nd last element 
+
+
+# to get specific row
+print (a[0, :])      #  : is the basic slice syntax
+
+
+# get specific column;
+print (a[:, 2])
+
+# getting little more fancy [startindex:endindex:stepsize]
+print(a[0, 1:6:2])    #i.e from row 1 start from 2nd index to the 6 value leaving one space
+
+
+
+
+
+
+
+print(type(a))       #---><class 'numpy.ndarray'>
