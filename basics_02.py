@@ -21,9 +21,20 @@ print (a[:, 2])
 print(a[0, 1:6:2])    #i.e from row 1 start from 2nd index to the 6 value leaving one space
 
 
+# change the value of row 1 element 5 value i.e 13 to 20
+a[1, 5] = 20
+print(a)
+
+# change columns
+a[:, 2] =5
+print(a)
+
+a[:, 2] =[1,2]
+print(a)
 
 
 
 
 
+#get class type
 print(type(a))       #---><class 'numpy.ndarray'>
