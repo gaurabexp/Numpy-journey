@@ -46,5 +46,26 @@ j=np.random.randint(7, size=(3,3))
 print(i)    #this gives one value , so we need to give size to from a proper matrix
 print(j)
 
+#In that line of code, -4 and 8 define the range of the random integers being generated.
+k=np.random.randint(-4,8, size=(3,3))
+print(k)
+
+
+#identity matrix
+l= np.identity(3)
+print(l)
+
+
+#Repeat an array
+arr= np.array([[1,2,3]])
+r1=np.repeat(arr,3, axis=0)
+print(r1)        
+
+# [[1 2 3]
+#  [1 2 3]
+#  [1 2 3]]
+
+
+
 
 
