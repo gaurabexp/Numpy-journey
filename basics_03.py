@@ -81,3 +81,12 @@ print(new)
 #  [1. 1. 1. 1. 1.]]
 
 
+###### Be carefull when copying arrays!!!!!!
+
+ab=np.array([1,2,3])
+# bb=ab            # bb points to ab , so when value of bb changes the ab changes . we have to make the initial copy of the ab values so values does not changes (we use .copy()  for this)
+
+bb=ab.copy()
+bb[0]= 100
+print(bb) 
+print(ab) 
