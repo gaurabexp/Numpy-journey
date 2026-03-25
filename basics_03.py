@@ -65,7 +65,13 @@ print(r1)
 #  [1 2 3]
 #  [1 2 3]]
 
+new=np.ones((5,5))
+oz=np.zeros((3,3))
+oz[1,1]=9
+print(oz)
 
+new[1:4,1:4]= oz
 
+print(new)
 
 
